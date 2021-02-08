@@ -57,6 +57,10 @@ html {
 
 /* Hero */
 .hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
   margin-top: 0px;
 }
 
@@ -196,6 +200,7 @@ html {
 
   .item h1 {
     font-size: 43px;
+    margin: 0px;
   }
 
   .title-wrapper {
