@@ -55,7 +55,7 @@
         </div>
         <div class="options-wrapper section">
           <div class="option-btn-wrapper">
-            <div class="option-btn"><span>Wholesale</span></div>
+            <div class="option-btn" id="wholesale-btn"><span>Wholesale</span></div>
             <span class="options-info">
               <span class="options-info-asterisk">*</span> min order 6000€, not below 1500pcs for
               weight <br />
@@ -66,7 +66,7 @@
           <span class="options-span">Choose your option!</span>
           <i class="fas fa-long-arrow-alt-right option-arrow" style="font-size: 25px"></i>
           <div class="option-btn-wrapper">
-            <div class="option-btn"><span>Retail</span></div>
+            <div class="option-btn" id="retail-btn"><span>Retail</span></div>
             <span class="options-info">
               <span class="options-info-asterisk">*</span> min order 1000€, not below 200pcs for
               weight <br />
@@ -77,50 +77,57 @@
       </div>
     </div>
 
-    <div class="shape section">
-      <div class="container">
-        <h2 class="section-title">Choose your shape</h2>
-        <div class="shape-item-container">
-          <div class="shape-item">
-            <img src="/images/1/shape1_red.png" alt="" />
-            <input type="radio" name="shape-btn" id="shape-1" class="float-shape" checked />
+    <div class="wholesale-section section" hidden>
+      <h2 class="options-title" id="wholesale">Wholesale</h2>
+      <div class="shape section">
+        <div class="container">
+          <h2 class="section-title">Choose your shape</h2>
+          <div class="shape-item-container">
+            <div class="shape-item">
+              <img src="/images/1/shape1_red.png" alt="" />
+              <input type="radio" name="shape-btn" id="shape-1" class="float-shape" checked />
+            </div>
+            <div class="shape-item">
+              <img src="/images/2/shape2_green.png" alt="" />
+              <input type="radio" name="shape-btn" id="shape-2" class="float-shape" />
+            </div>
+            <div class="shape-item">
+              <img src="/images/3/shape3_blue.png" alt="" />
+              <input type="radio" name="shape-btn" id="shape-3" class="float-shape" />
+            </div>
+            <div class="shape-item">
+              <img src="/images/4/shape4_yellow.png" alt="" />
+              <input type="radio" name="shape-btn" id="shape-4" class="float-shape" />
+            </div>
+            <div class="shape-item">
+              <img src="/images/5/shape5_red.png" alt="" />
+              <input type="radio" name="shape-btn" id="shape-5" class="float-shape" />
+            </div>
           </div>
-          <div class="shape-item">
-            <img src="/images/2/shape2_green.png" alt="" />
-            <input type="radio" name="shape-btn" id="shape-2" class="float-shape" />
-          </div>
-          <div class="shape-item">
-            <img src="/images/3/shape3_blue.png" alt="" />
-            <input type="radio" name="shape-btn" id="shape-3" class="float-shape" />
-          </div>
-          <div class="shape-item">
-            <img src="/images/4/shape4_yellow.png" alt="" />
-            <input type="radio" name="shape-btn" id="shape-4" class="float-shape" />
-          </div>
-          <div class="shape-item">
-            <img src="/images/5/shape5_red.png" alt="" />
-            <input type="radio" name="shape-btn" id="shape-5" class="float-shape" />
+        </div>
+      </div>
+
+      <div class="color section">
+        <div class="container">
+          <h2 class="section-title">Choose your color</h2>
+          <div class="color-item">
+            <div class="color-item-image-wrapper">
+              <img id="color-item-img" src="./images/1/shape1_red.png" alt="" />
+              <i class="fas fa-long-arrow-alt-left" id="arrow"></i>
+            </div>
+            <div class="color-palette-container">
+              <input type="radio" id="red-clr" name="color-btn" class="float-color" checked />
+              <input type="radio" id="green-clr" name="color-btn" class="float-color" />
+              <input type="radio" id="blue-clr" name="color-btn" class="float-color" />
+              <input type="radio" id="yellow-clr" name="color-btn" class="float-color" />
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="color section">
-      <div class="container">
-        <h2 class="section-title">Choose your color</h2>
-        <div class="color-item">
-          <div class="color-item-image-wrapper">
-            <img id="color-item-img" src="./images/1/shape1_red.png" alt="" />
-            <i class="fas fa-long-arrow-alt-left" id="arrow"></i>
-          </div>
-          <div class="color-palette-container">
-            <input type="radio" id="red-clr" name="color-btn" class="float-color" checked />
-            <input type="radio" id="green-clr" name="color-btn" class="float-color" />
-            <input type="radio" id="blue-clr" name="color-btn" class="float-color" />
-            <input type="radio" id="yellow-clr" name="color-btn" class="float-color" />
-          </div>
-        </div>
-      </div>
+    <div class="retail-section section" hidden>
+      <h2 class="options-title" id="retail">Retail</h2>
     </div>
   </body>
 

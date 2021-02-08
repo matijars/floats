@@ -52,6 +52,7 @@ $(document).ready(function () {
 
   floatShape();
   floatColor();
+  smoothScroll();
 });
 
 // Float shape
@@ -126,5 +127,21 @@ function floatColor() {
     } else if (color === "yellow-clr" && shape5) {
       $("#color-item-img").attr("src", "./images/5/shape5_yellow.png");
     }
+  });
+}
+
+function smoothScroll() {
+  // Add smooth scrolling to all links
+  $(".option-btn").on("click", function (event) {
+    if (this.id === "wholesale-btn") {
+      $(".wholesale-section").prop("hidden", false);
+      $(".retail-section").prop("hidden", true);
+    } else {
+      $(".retail-section").prop("hidden", false);
+      $(".wholesale-section").prop("hidden", true);
+    }
+    document
+      .querySelector(".options-title")
+      .scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
   });
 }

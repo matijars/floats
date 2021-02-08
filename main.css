@@ -8,8 +8,12 @@
   font-family: "Roboto", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .item {
-  height: 500px;
+  height: 600px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -48,7 +52,13 @@
   transform: translateX(-50%);
   width: 100px;
   height: 3px;
-  color: rgb(255, 0, 0);
+  background: rgb(255, 0, 0);
+}
+
+/* Hero */
+.hero {
+  height: 100vh;
+  margin-top: 0px;
 }
 
 /* Options */
@@ -119,6 +129,30 @@
   -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
   transform: translateX(-9%) translateY(-25%) rotate(45deg);
 }
+
+.options-title {
+  position: relative;
+  text-align: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+/* .options-title::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 3px;
+  background: rgb(255, 0, 0);
+} */
+
+/* Options Wholesale/Retail */
+/* .wholesale-section,
+.retail-section {
+  display: none;
+} */
 
 /* Shape */
 
