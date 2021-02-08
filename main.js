@@ -136,9 +136,15 @@ function smoothScroll() {
     if (this.id === "wholesale-btn") {
       $(".wholesale-section").prop("hidden", false);
       $(".retail-section").prop("hidden", true);
+      document
+        .querySelector("#wholesale")
+        .scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
     } else {
       $(".retail-section").prop("hidden", false);
       $(".wholesale-section").prop("hidden", true);
+      document
+        .querySelector("#retail")
+        .scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
     }
     document
       .querySelector(".options-title")
