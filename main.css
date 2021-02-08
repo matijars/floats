@@ -214,6 +214,20 @@ html {
   margin: 0;
 }
 
+/* Bokola */
+
+.bokola-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.bokola {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Responsive */
 @media only screen and (max-width: 991px) {
   .item {
