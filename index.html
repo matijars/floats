@@ -36,6 +36,7 @@
     <link rel="stylesheet" href="main.css" />
     <title>Floats</title>
   </head>
+
   <body>
     <div class="hero section">
       <div class="container">
@@ -49,7 +50,7 @@
               </h1>
             </div>
             <div class="image-wrapper">
-              <img src="./images/main-float.png" alt="" />
+              <img src="./images/main-float-bubble.png" alt="" />
             </div>
           </div>
         </div>
@@ -63,7 +64,7 @@
             </span>
           </div>
           <i class="fas fa-long-arrow-alt-left option-arrow" style="font-size: 25px"></i>
-          <span class="options-span">Choose your option!</span>
+          <span class="options-span">Choose your option</span>
           <i class="fas fa-long-arrow-alt-right option-arrow" style="font-size: 25px"></i>
           <div class="option-btn-wrapper">
             <div class="option-btn" id="retail-btn"><span>Retail</span></div>
@@ -81,38 +82,108 @@
       <h2 class="options-title" id="wholesale">Wholesale</h2>
       <div class="container">
         <div class="how-to-order">
-          <h2 class="section-title">How to order</h2>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem illum itaque molestias
-            odio facilis sint deserunt iste sequi libero, fugit veritatis consequatur! Quae rerum,
-            adipisci ipsam quaerat maxime labore autem.
-          </p>
+          <h2 class="section-title">Welcome wholesalers</h2>
+          <div class="row">
+            <div class="col-md-6 d-flex align-items-center text-justify">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem labore dicta corrupti
+              commodi, sequi at mollitia asperiores saepe corporis maxime accusamus, laboriosam,
+              excepturi obcaecati. Aliquid tenetur harum quos quae excepturi non distinctio
+              aspernatur porro repudiandae. Mollitia aut voluptatum obcaecati. Recusandae adipisci
+              quas voluptas iusto veniam labore modi, officiis nisi harum enim quod ullam autem
+              eveniet minus debitis placeat ducimus rem incidunt similique laudantium ab aut
+              quibusdam provident illum! Ut pariatur quae tempore laborum mollitia voluptate
+              ducimus. Porro corporis nesciunt distinctio nemo atque nulla nisi omnis reiciendis
+              unde. Nesciunt eveniet voluptatum hic iure reiciendis voluptatem corporis sit saepe
+              veniam. Maxime, ut.
+            </div>
+            <div class="col-md-6 d-flex align-items-center justify-content-center">
+              <img class="all-floats-image" src="./images/all-floats.jpg" alt="all-floats" />
+            </div>
+          </div>
         </div>
       </div>
 
       <div class="shape section">
         <div class="container">
           <h2 class="section-title">Choose your shape</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et neque minima ducimus
+            nostrum fugiat debitis voluptatum itaque nam unde minus.
+          </p>
           <div class="shape-item-container">
             <div class="shape-item">
-              <img src="/images/1/shape1_red.png" alt="" />
-              <input type="radio" name="shape-btn" id="shape-1" class="float-shape" checked />
+              <img src="/images/1/shape1_red.png" alt="f1" />
+              <div class="shape-name">
+                <input type="radio" name="shape-btn" id="shape-1" class="float-shape" checked />
+                <label for="shape-1">F1</label>
+              </div>
             </div>
             <div class="shape-item">
-              <img src="/images/2/shape2_green.png" alt="" />
-              <input type="radio" name="shape-btn" id="shape-2" class="float-shape" />
+              <img src="/images/2/shape2_green.png" alt="f2" />
+              <div class="shape-name">
+                <input type="radio" name="shape-btn" id="shape-2" class="float-shape" />
+                <label for="shape-2">F2</label>
+              </div>
             </div>
             <div class="shape-item">
-              <img src="/images/3/shape3_blue.png" alt="" />
-              <input type="radio" name="shape-btn" id="shape-3" class="float-shape" />
+              <img src="/images/3/shape3_blue.png" alt="f3" />
+              <div class="shape-name">
+                <input type="radio" name="shape-btn" id="shape-3" class="float-shape" />
+                <label for="shape-3">F3</label>
+              </div>
             </div>
             <div class="shape-item">
-              <img src="/images/4/shape4_yellow.png" alt="" />
-              <input type="radio" name="shape-btn" id="shape-4" class="float-shape" />
+              <img src="/images/4/shape4_yellow.png" alt="f4" />
+              <div class="shape-name">
+                <input type="radio" name="shape-btn" id="shape-4" class="float-shape" />
+                <label for="shape-4">F4</label>
+              </div>
             </div>
             <div class="shape-item">
-              <img src="/images/5/shape5_red.png" alt="" />
-              <input type="radio" name="shape-btn" id="shape-5" class="float-shape" />
+              <img src="/images/5/shape5_red.png" alt="f5" />
+              <div class="shape-name">
+                <input type="radio" name="shape-btn" id="shape-5" class="float-shape" />
+                <label for="shape-5">F5</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="color section">
+        <div class="container">
+          <h2 class="section-title">Choose your color</h2>
+          <div class="row">
+            <div class="col-md-8 f-flex justify-content-center">
+              <div class="color-item">
+                <div class="color-item-image-wrapper">
+                  <img id="color-item-img" src="./images/1/shape1_red.png" alt="" />
+                  <i class="fas fa-long-arrow-alt-left" id="arrow"></i>
+                </div>
+                <div class="color-palette-container">
+                  <div class="color-wrapper">
+                    <label for="red-clr">red</label>
+                    <input type="radio" id="red-clr" name="color-btn" class="float-color" checked />
+                  </div>
+                  <div class="color-wrapper">
+                    <label for="green-clr">green</label>
+                    <input type="radio" id="green-clr" name="color-btn" class="float-color" />
+                  </div>
+                  <div class="color-wrapper">
+                    <label for="blue-clr">blue</label>
+                    <input type="radio" id="blue-clr" name="color-btn" class="float-color" />
+                  </div>
+                  <div class="color-wrapper">
+                    <label for="yellow-clr">yellow</label>
+                    <input type="radio" id="yellow-clr" name="color-btn" class="float-color" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 d-flex align-items-center text-justify">
+              <p>
+                The bottom is always black but you can chose from 4 different colors for your top.
+              </p>
             </div>
           </div>
         </div>
@@ -123,12 +194,12 @@
           <h2 class="section-title">Choose your bokola</h2>
           <div class="bokola-wrapper">
             <div class="fi45 bokola">
-              <img src="./images/fi/1.png" alt=""> <br>
-              <span style="font-weight: 500; font-size: 20px;">Ø 45</span>
+              <img src="./images/fi/1.png" alt="" /> <br />
+              <span style="font-weight: 500; font-size: 20px">Ø 3</span>
             </div>
             <div class="fi3.5 bokola">
-              <img src="./images/fi/2.png" alt=""> <br>
-              <span style="font-weight: 500; font-size: 20px; margin-left: 25px;">Ø 3.5</span>
+              <img src="./images/fi/2.png" alt="" /> <br />
+              <span style="font-weight: 500; font-size: 20px; margin-left: 25px">Ø 4.5</span>
             </div>
           </div>
         </div>
@@ -137,37 +208,6 @@
       <div class="brand section">
         <div class="container">
           <h2 class="section-title">Choose your brand</h2>
-
-        </div>
-      </div>
-
-      <div class="color section">
-        <div class="container">
-          <h2 class="section-title">Choose your color</h2>
-          <div class="color-item">
-            <div class="color-item-image-wrapper">
-              <img id="color-item-img" src="./images/1/shape1_red.png" alt="" />
-              <i class="fas fa-long-arrow-alt-left" id="arrow"></i>
-            </div>
-            <div class="color-palette-container">
-              <div class="color-wrapper">
-              <label for="red-clr">red</label>
-              <input type="radio" id="red-clr" name="color-btn" class="float-color" checked />
-              </div>
-              <div class="color-wrapper">
-                <label for="green-clr">green</label>
-                <input type="radio" id="green-clr" name="color-btn" class="float-color" />
-              </div>
-              <div class="color-wrapper">
-                <label for="blue-clr">blue</label>
-                <input type="radio" id="blue-clr" name="color-btn" class="float-color" />
-              </div>
-              <div class="color-wrapper">
-                <label for="yellow-clr">yellow</label>
-                <input type="radio" id="yellow-clr" name="color-btn" class="float-color" />
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </div>
@@ -183,6 +223,7 @@
             adipisci ipsam quaerat maxime labore autem.
           </p>
         </div>
+      </div>
     </div>
   </body>
 
