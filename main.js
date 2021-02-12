@@ -87,45 +87,45 @@ function floatColor() {
     let shape5 = document.querySelector("#shape-5").checked;
 
     if (color === "red-clr" && shape1) {
-      $("#color-item-img").attr("src", "./images/1/shape1_red.png");
+      $("#shape-1-img").attr("src", "./images/1/shape1_red.png");
     } else if (color === "green-clr" && shape1) {
-      $("#color-item-img").attr("src", "./images/1/shape1_green.png");
+      $("#shape-1-img").attr("src", "./images/1/shape1_green.png");
     } else if (color === "blue-clr" && shape1) {
-      $("#color-item-img").attr("src", "./images/1/shape1_blue.png");
+      $("#shape-1-img").attr("src", "./images/1/shape1_blue.png");
     } else if (color === "yellow-clr" && shape1) {
-      $("#color-item-img").attr("src", "./images/1/shape1_yellow.png");
+      $("#shape-1-img").attr("src", "./images/1/shape1_yellow.png");
     } else if (color === "red-clr" && shape2) {
-      $("#color-item-img").attr("src", "./images/2/shape2_red.png");
+      $("#shape-2-img").attr("src", "./images/2/shape2_red.png");
     } else if (color === "green-clr" && shape2) {
-      $("#color-item-img").attr("src", "./images/2/shape2_green.png");
+      $("#shape-2-img").attr("src", "./images/2/shape2_green.png");
     } else if (color === "blue-clr" && shape2) {
-      $("#color-item-img").attr("src", "./images/2/shape2_blue.png");
+      $("#shape-2-img").attr("src", "./images/2/shape2_blue.png");
     } else if (color === "yellow-clr" && shape2) {
-      $("#color-item-img").attr("src", "./images/2/shape2_yellow.png");
+      $("#shape-2-img").attr("src", "./images/2/shape2_yellow.png");
     } else if (color === "red-clr" && shape3) {
-      $("#color-item-img").attr("src", "./images/3/shape3_red.png");
+      $("#shape-3-img").attr("src", "./images/3/shape3_red.png");
     } else if (color === "green-clr" && shape3) {
-      $("#color-item-img").attr("src", "./images/3/shape3_green.png");
+      $("#shape-3-img").attr("src", "./images/3/shape3_green.png");
     } else if (color === "blue-clr" && shape3) {
-      $("#color-item-img").attr("src", "./images/3/shape3_blue.png");
+      $("#shape-3-img").attr("src", "./images/3/shape3_blue.png");
     } else if (color === "yellow-clr" && shape3) {
-      $("#color-item-img").attr("src", "./images/3/shape3_yellow.png");
+      $("#shape-3-img").attr("src", "./images/3/shape3_yellow.png");
     } else if (color === "red-clr" && shape4) {
-      $("#color-item-img").attr("src", "./images/4/shape4_red.png");
+      $("#shape-4-img").attr("src", "./images/4/shape4_red.png");
     } else if (color === "green-clr" && shape4) {
-      $("#color-item-img").attr("src", "./images/4/shape4_green.png");
+      $("#shape-4-img").attr("src", "./images/4/shape4_green.png");
     } else if (color === "blue-clr" && shape4) {
-      $("#color-item-img").attr("src", "./images/4/shape4_blue.png");
+      $("#shape-4-img").attr("src", "./images/4/shape4_blue.png");
     } else if (color === "yellow-clr" && shape4) {
-      $("#color-item-img").attr("src", "./images/4/shape4_yellow.png");
+      $("#shape-4-img").attr("src", "./images/4/shape4_yellow.png");
     } else if (color === "red-clr" && shape5) {
-      $("#color-item-img").attr("src", "./images/5/shape5_red.png");
+      $("#shape-5-img").attr("src", "./images/5/shape5_red.png");
     } else if (color === "green-clr" && shape5) {
-      $("#color-item-img").attr("src", "./images/5/shape5_green.png");
+      $("#shape-5-img").attr("src", "./images/5/shape5_green.png");
     } else if (color === "blue-clr" && shape5) {
-      $("#color-item-img").attr("src", "./images/5/shape5_blue.png");
+      $("#shape-5-img").attr("src", "./images/5/shape5_blue.png");
     } else if (color === "yellow-clr" && shape5) {
-      $("#color-item-img").attr("src", "./images/5/shape5_yellow.png");
+      $("#shape-5-img").attr("src", "./images/5/shape5_yellow.png");
     }
   });
 }

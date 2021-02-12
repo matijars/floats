@@ -105,56 +105,82 @@
 
       <div class="shape section">
         <div class="container">
-          <h2 class="section-title">Choose your shape</h2>
+          <h2 class="section-title">Choose your shape and color</h2>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et neque minima ducimus
-            nostrum fugiat debitis voluptatum itaque nam unde minus.
+            Choose from 6 different shapes in sizes from 1 to 4 grams. Available sizes are 1, 1.5,
+            2, 2.5, 3, 4. The bottom is always black but you can choose from 4 different colors for
+            your top.
           </p>
-          <div class="shape-item-container">
-            <div class="shape-item">
-              <img src="/images/1/shape1_red.png" alt="f1" />
-              <div class="shape-name">
-                <input type="radio" name="shape-btn" id="shape-1" class="float-shape" checked />
-                <label for="shape-1">F1</label>
+          <div class="row">
+            <div class="col-lg-9">
+              <div class="shape-item-container">
+                <div class="shape-item">
+                  <img src="/images/1/shape1_red.png" alt="f1" id="shape-1-img" />
+                  <div class="shape-name">
+                    <input type="radio" name="shape-btn" id="shape-1" class="float-shape" checked />
+                    <label for="shape-1">F1</label>
+                  </div>
+                </div>
+                <div class="shape-item">
+                  <img src="/images/2/shape2_green.png" alt="f2" id="shape-2-img" />
+                  <div class="shape-name">
+                    <input type="radio" name="shape-btn" id="shape-2" class="float-shape" />
+                    <label for="shape-2">F2</label>
+                  </div>
+                </div>
+                <div class="shape-item">
+                  <img src="/images/3/shape3_blue.png" alt="f3" id="shape-3-img" />
+                  <div class="shape-name">
+                    <input type="radio" name="shape-btn" id="shape-3" class="float-shape" />
+                    <label for="shape-3">F3</label>
+                  </div>
+                </div>
+                <div class="shape-item">
+                  <img src="/images/4/shape4_yellow.png" alt="f4" id="shape-4-img" />
+                  <div class="shape-name">
+                    <input type="radio" name="shape-btn" id="shape-4" class="float-shape" />
+                    <label for="shape-4">F4</label>
+                  </div>
+                </div>
+                <div class="shape-item">
+                  <img src="/images/5/shape5_red.png" alt="f5" id="shape-5-img" />
+                  <div class="shape-name">
+                    <input type="radio" name="shape-btn" id="shape-5" class="float-shape" />
+                    <label for="shape-5">F5</label>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="shape-item">
-              <img src="/images/2/shape2_green.png" alt="f2" />
-              <div class="shape-name">
-                <input type="radio" name="shape-btn" id="shape-2" class="float-shape" />
-                <label for="shape-2">F2</label>
-              </div>
-            </div>
-            <div class="shape-item">
-              <img src="/images/3/shape3_blue.png" alt="f3" />
-              <div class="shape-name">
-                <input type="radio" name="shape-btn" id="shape-3" class="float-shape" />
-                <label for="shape-3">F3</label>
-              </div>
-            </div>
-            <div class="shape-item">
-              <img src="/images/4/shape4_yellow.png" alt="f4" />
-              <div class="shape-name">
-                <input type="radio" name="shape-btn" id="shape-4" class="float-shape" />
-                <label for="shape-4">F4</label>
-              </div>
-            </div>
-            <div class="shape-item">
-              <img src="/images/5/shape5_red.png" alt="f5" />
-              <div class="shape-name">
-                <input type="radio" name="shape-btn" id="shape-5" class="float-shape" />
-                <label for="shape-5">F5</label>
+            <div class="col-lg-3 d-flex align-items-center justify-content-center">
+              <div class="color-palette-container">
+                <span style="margin-bottom: 10px; font-weight: 500; font-size: 17px" ;>Color:</span>
+                <div class="color-wrapper">
+                  <label for="red-clr">red</label>
+                  <input type="radio" id="red-clr" name="color-btn" class="float-color" checked />
+                </div>
+                <div class="color-wrapper">
+                  <label for="green-clr">green</label>
+                  <input type="radio" id="green-clr" name="color-btn" class="float-color" />
+                </div>
+                <div class="color-wrapper">
+                  <label for="blue-clr">blue</label>
+                  <input type="radio" id="blue-clr" name="color-btn" class="float-color" />
+                </div>
+                <div class="color-wrapper">
+                  <label for="yellow-clr">yellow</label>
+                  <input type="radio" id="yellow-clr" name="color-btn" class="float-color" />
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="color section">
+      <!-- <div class="color section">
         <div class="container">
           <h2 class="section-title">Choose your color</h2>
           <div class="row">
-            <div class="col-md-8 f-flex justify-content-center">
+            <div class="col-md-8">
               <div class="color-item">
                 <div class="color-item-image-wrapper">
                   <img id="color-item-img" src="./images/1/shape1_red.png" alt="" />
@@ -182,24 +208,32 @@
             </div>
             <div class="col-md-4 d-flex align-items-center text-justify">
               <p>
-                The bottom is always black but you can chose from 4 different colors for your top.
+                The bottom is always black but you can choose from 4 different colors for your top.
               </p>
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
 
-      <div class="bokola section">
+      <div class="antena section">
         <div class="container">
-          <h2 class="section-title">Choose your bokola</h2>
-          <div class="bokola-wrapper">
-            <div class="fi45 bokola">
-              <img src="./images/fi/1.png" alt="" /> <br />
-              <span style="font-weight: 500; font-size: 20px">Ø 3</span>
+          <h2 class="section-title">Choose your starlight antena</h2>
+          <div class="row">
+            <div class="col-md-4 d-flex align-items-center text-justify">
+              <p>
+                You can choose which starlight antenna will your float have. You have 4.5 and 3 mm
+                option. When you choose arena you also choose the one of options for night fishing.
+              </p>
             </div>
-            <div class="fi3.5 bokola">
-              <img src="./images/fi/2.png" alt="" /> <br />
-              <span style="font-weight: 500; font-size: 20px; margin-left: 25px">Ø 4.5</span>
+            <div class="col-md-8 d-flex justify-content-center">
+              <div class="fi45">
+                <img src="./images/fi/1.png" alt="" /> <br />
+                <span style="font-weight: 500; font-size: 20px">Ø 3</span>
+              </div>
+              <div class="fi3.5">
+                <img src="./images/fi/2.png" alt="" /> <br />
+                <span style="font-weight: 500; font-size: 20px; margin-left: 25px">Ø 4.5</span>
+              </div>
             </div>
           </div>
         </div>

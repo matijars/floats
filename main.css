@@ -240,19 +240,7 @@ html {
   cursor: pointer;
 }
 
-/* Bokola */
-
-.bokola-wrapper {
-  display: flex;
-  justify-content: center;
-}
-
-.bokola {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+/* Antena */
 
 /* Responsive */
 @media only screen and (max-width: 991px) {
@@ -289,5 +277,28 @@ html {
   }
   .option-arrow {
     display: none;
+  }
+
+  /* Color */
+  .color-palette-container {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    margin-top: 30px;
+  }
+
+  .color-palette-container span {
+    margin-bottom: 0 !important;
+  }
+
+  .color-palette-container label {
+    margin-right: 5px;
+  }
+
+  .color-wrapper {
+    align-items: center;
+    justify-content: center;
+    height: 100%;
   }
 }
