@@ -144,23 +144,6 @@ html {
   text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }
 
-/* .options-title::before {
-  content: "";
-  position: absolute;
-  bottom: -5px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
-  height: 3px;
-  background: rgb(255, 0, 0);
-} */
-
-/* Options Wholesale/Retail */
-/* .wholesale-section,
-.retail-section {
-  display: none;
-} */
-
 /* Welcome */
 .all-floats-image {
   width: 90%;
@@ -278,6 +261,10 @@ html {
 
   .options-span {
     margin: 50px 0px 20px 0px;
+  }
+
+  .option-arrow {
+    display: none;
   }
 
   /* Color */
