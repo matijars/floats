@@ -150,4 +150,10 @@ function smoothScroll() {
       .querySelector(".options-title")
       .scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
   });
+
+  $(".to-top").on("click", function (event) {
+    document
+      .querySelector("body")
+      .scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+  });
 }
