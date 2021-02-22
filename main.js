@@ -72,6 +72,8 @@ function floatShape() {
       $("#color-item-img").attr("src", "./images/4/shape4_red.png");
     } else if (shape === "shape-5") {
       $("#color-item-img").attr("src", "./images/5/shape5_red.png");
+    } else if (shape === "shape-6") {
+      $("#color-item-img").attr("src", "./images/5/shape6_red.png");
     }
   });
 }
@@ -85,6 +87,7 @@ function floatColor() {
     let shape3 = document.querySelector("#shape-3").checked;
     let shape4 = document.querySelector("#shape-4").checked;
     let shape5 = document.querySelector("#shape-5").checked;
+    let shape6 = document.querySelector("#shape-6").checked;
 
     if (color === "red-clr" && shape1) {
       $("#shape-1-img").attr("src", "./images/1/shape1_red.png");
@@ -126,6 +129,14 @@ function floatColor() {
       $("#shape-5-img").attr("src", "./images/5/shape5_blue.png");
     } else if (color === "yellow-clr" && shape5) {
       $("#shape-5-img").attr("src", "./images/5/shape5_yellow.png");
+    } else if (color === "red-clr" && shape6) {
+      $("#shape-6-img").attr("src", "./images/6/shape6_red.png");
+    } else if (color === "green-clr" && shape6) {
+      $("#shape-6-img").attr("src", "./images/6/shape6_green.png");
+    } else if (color === "blue-clr" && shape6) {
+      $("#shape-6-img").attr("src", "./images/6/shape6_blue.png");
+    } else if (color === "yellow-clr" && shape6) {
+      $("#shape-6-img").attr("src", "./images/6/shape6_yellow.png");
     }
   });
 }
