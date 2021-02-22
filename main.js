@@ -52,6 +52,7 @@ $(document).ready(function () {
 
   floatShape();
   floatColor();
+  floatModel();
   smoothScroll();
 });
 
@@ -138,6 +139,35 @@ function floatColor() {
     } else if (color === "yellow-clr" && shape6) {
       $("#shape-6-img").attr("src", "./images/6/shape6_yellow.png");
     }
+  });
+}
+
+function floatModel() {
+  $(".float-model").on("ifChecked", function (e) {
+    let model = e.target.id;
+
+    let model1 = document.querySelector("#model-1").checked;
+    let model2 = document.querySelector("#model-2").checked;
+    let model3 = document.querySelector("#model-3").checked;
+    let model4 = document.querySelector("#model-4").checked;
+    let model5 = document.querySelector("#model-5").checked;
+    let model6 = document.querySelector("#model-6").checked;
+
+    if (model === "model-1") {
+      $("#float-size").attr("src", "./images/1/r1.jpeg");
+    } else if (model === "model-2") {
+      $("#float-size").attr("src", "./images/2/r2.jpeg");
+    } else if (model === "model-3") {
+      $("#float-size").attr("src", "./images/3/r3.jpeg");
+    } else if (model === "model-4") {
+      $("#float-size").attr("src", "./images/4/r4.jpeg");
+    } else if (model === "model-5") {
+      $("#float-size").attr("src", "./images/5/r5.jpeg");
+    } else if (model === "model-6") {
+      $("#float-size").attr("src", "./images/6/r6.jpeg");
+    }
+
+    console.log(model);
   });
 }
 

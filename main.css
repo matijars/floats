@@ -248,6 +248,20 @@ html {
   border-radius: 10px;
 }
 
+/* RETAILERS */
+
+.size-wrapper {
+  margin-left: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#float-size {
+  height: 350px;
+}
+
 /* Responsive */
 @media only screen and (max-width: 991px) {
   .item {
@@ -306,5 +320,11 @@ html {
     align-items: center;
     justify-content: center;
     height: 100%;
+  }
+}
+
+@media only screen and (max-width: 556px) {
+  .packing-img-wrapper {
+    flex-direction: column;
   }
 }
