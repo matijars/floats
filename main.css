@@ -134,7 +134,7 @@ html {
   top: 0;
   height: 490%;
   width: 140%;
-  color: var(--primary-orange);
+  background-color: var(--primary-orange);
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
