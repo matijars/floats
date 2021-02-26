@@ -28,28 +28,6 @@ $(document).ready(function () {
 
   // Carousel
 
-  $(".owl-carousel").owlCarousel({
-    loop: true,
-    margin: 10,
-    nav: true,
-    autoplay: true,
-    autoplayTimeout: 5000,
-    autoplayHoverPause: false,
-    smartSpeed: 1000,
-    nav: false,
-    responsive: {
-      0: {
-        items: 1,
-      },
-      600: {
-        items: 1,
-      },
-      1000: {
-        items: 1,
-      },
-    },
-  });
-
   floatShape();
   floatColor();
   floatModel();
@@ -178,17 +156,23 @@ function smoothScroll() {
       $(".wholesale-section").prop("hidden", false);
       $(".retail-section").prop("hidden", true);
       document
-        .querySelector("#wholesale")
+        .querySelector("#wholesale-title")
         .scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+      document
+        .querySelector("#wholesale")
+        .classList.add("animate__animated", "animate__delay-1s", "animate__tada");
     } else {
       $(".retail-section").prop("hidden", false);
       $(".wholesale-section").prop("hidden", true);
       document
-        .querySelector("#retail")
+        .querySelector("#retail-title")
         .scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+      document
+        .querySelector("#retail")
+        .classList.add("animate__animated", "animate__delay-1s", "animate__tada");
     }
     document
-      .querySelector(".options-title")
+      .querySelector(".section-title")
       .scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
   });
 
@@ -198,3 +182,26 @@ function smoothScroll() {
       .scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
   });
 }
+
+// Animations
+
+const titleWrapper = document.querySelector(".title-wrapper");
+const mainFloatImage = document.querySelector(".image-wrapper");
+const optionsWrapper = document.querySelector(".options-wrapper");
+const antena = document.querySelector(".antena");
+const shape = document.querySelector(".shape");
+const brand = document.querySelector(".brand");
+const packing = document.querySelector(".packing");
+
+const wholesaleBtn = document.querySelector("#wholesale-btn");
+const retailBtn = document.querySelector("#retail-btn");
+
+titleWrapper.classList.add("animate__animated", "animate__fadeInLeft");
+
+mainFloatImage.classList.add("animate__animated", "animate__delay-500ms", "animate__fadeInRight");
+optionsWrapper.classList.add("animate__animated", "animate__delay-1s", "animate__fadeInUp");
+
+optionsWrapper.addEventListener("animationend", () => {
+  wholesaleBtn.classList.add("animate__animated", "animate__shakeX");
+  retailBtn.classList.add("animate__animated", "animate__delay-1s", "animate__shakeX");
+});

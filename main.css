@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nerko+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap");
 
 * {
   margin: 0;
@@ -10,6 +11,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 .item {
@@ -28,7 +30,7 @@ html {
 }
 
 .item img {
-  width: 80% !important;
+  width: 100% !important;
 }
 
 .section {
@@ -39,9 +41,10 @@ html {
 .section-title {
   position: relative;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
+  font-weight: 600;
   text-transform: uppercase;
-  margin-bottom: 40px;
+  margin-bottom: 6rem;
 }
 
 .section-title::after {
@@ -60,8 +63,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 90vh;
-  margin-top: 0px;
+  height: 100vh;
 }
 
 /* Options */
@@ -149,6 +151,11 @@ html {
   width: 90%;
 }
 
+.welcome-text {
+  font-size: 1.1em;
+  font-weight: 500;
+}
+
 /* Shape */
 
 .shape-item {
@@ -228,6 +235,9 @@ html {
 }
 
 /* Brand */
+
+.brand img {
+}
 
 /* Package */
 
