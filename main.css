@@ -267,6 +267,13 @@ html {
   cursor: pointer;
   border-bottom: 3px solid var(--primary-orange);
   border-radius: 10px;
+  transition: color 0.1s ease-in;
+  text-decoration: none !important;
+}
+
+.to-top:hover,
+.about-us:hover {
+  color: var(--primary-fluo);
 }
 
 /* RETAILERS */
@@ -281,6 +288,21 @@ html {
 
 #float-size {
   height: 350px;
+}
+
+/* About us */
+.about-us-page {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Video */
+
+.video {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
 }
 
 /* Responsive */
