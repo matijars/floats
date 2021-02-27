@@ -26,12 +26,11 @@ $(document).ready(function () {
     radioClass: "iradio_square-yellow",
   });
 
-  // Carousel
-
   floatShape();
   floatColor();
   floatModel();
   smoothScroll();
+  responsiveElements();
 });
 
 // Float shape
@@ -144,14 +143,13 @@ function floatModel() {
     } else if (model === "model-6") {
       $("#float-size").attr("src", "./images/6/r6.jpeg");
     }
-
-    console.log(model);
   });
 }
 
 function smoothScroll() {
   // Add smooth scrolling to all links
   $(".option-btn").on("click", function (event) {
+    responsiveElements();
     if (this.id === "wholesale-btn") {
       $(".wholesale-section").prop("hidden", false);
       $(".retail-section").prop("hidden", true);
@@ -205,3 +203,25 @@ optionsWrapper.addEventListener("animationend", () => {
   wholesaleBtn.classList.add("animate__animated", "animate__shakeX");
   retailBtn.classList.add("animate__animated", "animate__delay-1s", "animate__shakeX");
 });
+
+// Responsive
+
+function responsiveElements() {
+  if ($(window).width() > 991) {
+    $(".section-text").prop("hidden", true);
+    $(".speech-bubble").prop("hidden", false);
+  } else {
+    $(".section-text").prop("hidden", false);
+    $(".speech-bubble").prop("hidden", true);
+  }
+
+  $(window).on("resize", function () {
+    if ($(this).width() > 991) {
+      $(".section-text").prop("hidden", true);
+      $(".speech-bubble").prop("hidden", false);
+    } else if ($(this).width() < 990) {
+      $(".section-text").prop("hidden", false);
+      $(".speech-bubble").prop("hidden", true);
+    }
+  });
+}
