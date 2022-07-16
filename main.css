@@ -179,7 +179,7 @@ html {
   width: 50%;
   height: 3px;
   background-color: var(--primary-orange);
-  bottom: 9px;
+  bottom: 5px;
   left: 50%;
   transform: translateX(-50%);
   opacity: 0.5;
@@ -233,6 +233,10 @@ html {
 
 .section-info-right button {
   min-width: 200px;
+}
+
+.other-models-right-section img {
+  width: 70%;
 }
 
 /* FOOTER */
