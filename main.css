@@ -151,6 +151,10 @@ html {
   align-items: center;
 }
 
+.section-title-img-margin {
+  margin-left: 15px;
+}
+
 .section-title-img .bocola-img {
   width: 20%;
 }
