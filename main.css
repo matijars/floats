@@ -135,6 +135,106 @@ html {
   transform: translateX(80%);
 }
 
+/* Sections */
+
+.section {
+  margin: 80px 0px;
+}
+
+.right-section img {
+  width: 100%;
+}
+
+.section-title-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-title-img .bocola-img {
+  width: 20%;
+}
+
+.section-title-img .small-bocola-img {
+  width: 15%;
+}
+
+.section-title {
+  position: relative;
+  font-family: "Nerko One", cursive !important;
+  font-size: 50px;
+  color: var(--primary-orange);
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+
+@media only screen and (max-width: 453px) {
+  .section-title {
+    font-size: 10vw;
+  }
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 3px;
+  background-color: var(--primary-orange);
+  bottom: 9px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.5;
+}
+
+.section-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 0px;
+}
+
+.section-info-important {
+  color: var(--primary-orange);
+  font-weight: bold;
+}
+
+.section-info ul {
+  list-style: none;
+}
+
+.section-info ul li {
+  position: relative;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.section-info ul li::before {
+  content: "";
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  background-color: var(--primary-orange);
+  left: -20px;
+  top: 5px;
+  border-radius: 50%;
+}
+
+.section-info img {
+  width: 30%;
+}
+
+.section-info .small-img {
+  width: 15%;
+}
+
+.section-info-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-info-right button {
+  min-width: 200px;
+}
+
 /* FOOTER */
 
 .footer-container {
@@ -226,99 +326,4 @@ html {
   .footer #distribution {
     padding: 20px 0px 10px 0px;
   }
-}
-
-/* Sections */
-
-.section {
-  margin: 80px 0px;
-}
-
-.right-section img {
-  width: 100%;
-}
-
-.section-title-img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.section-title-img .bocola-img {
-  width: 20%;
-}
-
-.section-title-img .small-bocola-img {
-  width: 15%;
-}
-
-.section-title {
-  position: relative;
-  font-family: "Nerko One", cursive !important;
-  font-size: 50px;
-  color: var(--primary-orange);
-  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
-}
-
-@media only screen and (max-width: 453px) {
-  .section-title {
-    font-size: 10vw;
-  }
-}
-
-.section-title::after {
-  content: "";
-  position: absolute;
-  width: 50%;
-  height: 3px;
-  background-color: var(--primary-orange);
-  bottom: 9px;
-  left: 50%;
-  transform: translateX(-50%);
-  opacity: 0.5;
-}
-
-.section-info {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 50px 0px;
-}
-
-.section-info ul {
-  list-style: none;
-}
-
-.section-info ul li {
-  position: relative;
-  font-size: 17px;
-  font-weight: 500;
-}
-
-.section-info ul li::before {
-  content: "";
-  position: absolute;
-  width: 13px;
-  height: 13px;
-  background-color: var(--primary-orange);
-  left: -20px;
-  top: 5px;
-  border-radius: 50%;
-}
-
-.section-info img {
-  width: 30%;
-}
-
-.section-info .small-img {
-  width: 15%;
-}
-
-.section-info-right {
-  display: flex;
-  flex-direction: column;
-}
-
-.section-info-right button {
-  min-width: 200px;
 }
