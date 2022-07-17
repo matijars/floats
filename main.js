@@ -1,3 +1,8 @@
+// Nav Bar
+var prev = 0;
+var $window = $(window);
+var nav = $(".nav");
+
 $(document).ready(function () {
   // Gets the video src from the data-src on each button
 
@@ -5,7 +10,6 @@ $(document).ready(function () {
   $(".video-btn").click(function () {
     $videoSrc = $(this).data("src");
   });
-  console.log($videoSrc);
 
   // when the modal is opened autoplay it
   $("#myModal").on("shown.bs.modal", function (e) {
@@ -19,22 +23,18 @@ $(document).ready(function () {
     $("#video").attr("src", $videoSrc);
   });
 
+  // nav.addClass("hidden");
+  // nav.remove();
   // document ready
 });
 
-// Nav Bar
-var prev = 0;
-var $window = $(window);
-var nav = $(".nav");
-
 $window.on("scroll", function () {
   var scrollTop = $window.scrollTop();
-  nav.toggleClass("hidden", scrollTop < prev);
+  nav.toggleClass("hidden", scrollTop > prev);
   prev = scrollTop;
 });
 
 // Scroll top
-window.scroll({ top: 0, behavior: "smooth" });
 function scrollToTop() {
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
