@@ -67,7 +67,11 @@
                   <li>You can choose the shape, color and brand</li>
                   <li>Price range from <span class="section-info-important">€ 0.25</span></li>
                 </ul>
-                <button class="option-btn mt-5"><span>Video</span></button>
+
+                <!-- Button trigger modal -->
+                <button type="button" class="option-btn mt-5 video-btn" data-bs-toggle="modal" data-src="https://www.youtube.com/embed/KjBiG6yTYI4" data-bs-target="#myModal">
+                  <span>Video</span>
+                </button>
               </div>
             </div>
           </div>
@@ -116,7 +120,11 @@
                   <li>You can choose the shape, color and brand</li>
                   <li>Price range from <span class="section-info-important">€ 0.30</span></li>
                 </ul>
-                <button class="option-btn mt-5"><span>Video</span></button>
+
+                <!-- Button trigger modal -->
+                <button type="button" class="option-btn mt-5 video-btn" data-bs-toggle="modal" data-src="https://www.youtube.com/embed/TRncyl4fXu4" data-bs-target="#myModal">
+                  <span>Video</span>
+                </button>
               </div>
             </div>
           </div>
@@ -161,7 +169,11 @@
                   <li>You can choose the shape, color and brand</li>
                   <li>Price range from <span class="section-info-important">€ 0.20</span></li>
                 </ul>
-                <button class="option-btn mt-5"><span>Video</span></button>
+
+                <!-- Button trigger modal -->
+                <button type="button" class="option-btn mt-5 video-btn" data-bs-toggle="modal" data-src="https://www.youtube.com/embed/Fm4p5k2o67A" data-bs-target="#myModal">
+                  <span>Video</span>
+                </button>
               </div>
             </div>
           </div>
@@ -208,7 +220,11 @@
                   <li>You can choose the shape, color and brand</li>
                   <li>Price range from <span class="section-info-important">€ 0.35</span></li>
                 </ul>
-                <button class="option-btn mt-5"><span>Video</span></button>
+
+                <!-- Button trigger modal -->
+                <button type="button" class="option-btn mt-5 video-btn" data-bs-toggle="modal" data-src="https://www.youtube.com/embed/bIWgnN11AT4" data-bs-target="#myModal">
+                  <span>Video</span>
+                </button>
               </div>
             </div>
           </div>
@@ -252,7 +268,11 @@
                   <li>You can choose the color and brand</li>
                   <li>Price range from <span class="section-info-important">€ 0.40</span></li>
                 </ul>
-                <button class="option-btn mt-5"><span>Video</span></button>
+
+                <!-- Button trigger modal -->
+                <button type="button" class="option-btn mt-5 video-btn" data-bs-toggle="modal" data-src="https://www.youtube.com/embed/8xB8DqEceEU" data-bs-target="#myModal">
+                  <span>Video</span>
+                </button>
               </div>
             </div>
           </div>
@@ -301,5 +321,34 @@
         </div>
       </div>
     </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></span></button>    
+
+              <!-- 16:9 aspect ratio -->
+            <div class="ratio ratio-16x9">
+              <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
   </body>
+
+  <!-- JavaScript Bundle with Popper -->
+  <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"
+  ></script>
+  <script src="main.js"></script>
 </html>
