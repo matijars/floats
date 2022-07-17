@@ -205,7 +205,8 @@ html {
   list-style: none;
 }
 
-.section-info ul li {
+.section-info ul li,
+.about-us-text {
   position: relative;
   font-size: 17px;
   font-weight: 500;
@@ -241,6 +242,28 @@ html {
 
 .other-models-right-section img {
   width: 70%;
+}
+
+/* OTHER MODEL INFO IMAGE SIZES */
+
+.section-info .section-info-img-1 {
+  width: 23% !important;
+}
+
+.section-info .section-info-img-2 {
+  width: 23% !important;
+}
+
+.section-info .section-info-img-3 {
+  width: 23% !important;
+}
+
+.section-info .section-info-img-4 {
+  width: 25% !important;
+}
+
+.section-info .section-info-img-5 {
+  width: 25% !important;
 }
 
 /* FOOTER */
