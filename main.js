@@ -21,3 +21,20 @@ $(document).ready(function () {
 
   // document ready
 });
+
+// Nav Bar
+var prev = 0;
+var $window = $(window);
+var nav = $(".nav");
+
+$window.on("scroll", function () {
+  var scrollTop = $window.scrollTop();
+  nav.toggleClass("hidden", scrollTop < prev);
+  prev = scrollTop;
+});
+
+// Scroll top
+window.scroll({ top: 0, behavior: "smooth" });
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
