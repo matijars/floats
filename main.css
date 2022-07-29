@@ -419,3 +419,56 @@ html {
   -o-transform: translateY(40px);
   transform: translateY(40px);
 }
+
+/* BUTTONS */
+
+.video-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+}
+
+.video-btn-tooltip {
+  text-align: center;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--primary-orange);
+  margin-top: 6px;
+}
+
+.video-btn-tooltip i {
+  font-size: 25px;
+  transform: rotate(-60deg);
+}
+
+/* BOUNCING ARROW */
+.bouncing-arrow {
+  position: fixed;
+  top: 93%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 40px;
+  color: var(--primary-orange);
+  z-index: 1;
+}
+
+.bounce {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
